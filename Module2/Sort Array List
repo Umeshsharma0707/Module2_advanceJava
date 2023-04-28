@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+ class P7{
+    public static void main(String[] args) {
+        
+       ArrayList<Integer> list =new ArrayList<>();
+	   
+	   
+	   
+	   list.add(5);
+	   list.add(4);
+	   list.add(7);
+	   list.add(8);
+	   
+	   Collections.sort(list);
+	   
+	   System.out.println("ArrayList =" + list);
+    }
+}

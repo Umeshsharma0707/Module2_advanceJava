@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+class P7
+{
+	public static void main(String args[])
+	{
+		ArrayList<String> list = new ArrayList<String>();
+		
+		list.add("Kapil");
+		list.add("Dwayne");
+		list.add("Karan");
+		
+		for(int i=0; i<=3; i++)
+		{
+			System.out.println("list.get(i)");
+		}
+		
+		for(String s : list)
+		{
+			System.out.println(s);
+		}
+	}
+}

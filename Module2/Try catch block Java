@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try {
+            System.out.print("Enter two numbers: ");
+            int num1 = input.nextInt();
+            int num2 = input.nextInt();
+            int result = num1 / num2;
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Exception in thread main " + e);
+        }
+        input.close();
+    }
+}

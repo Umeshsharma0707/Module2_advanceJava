@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+ class P7 {
+    public static void main(String[] args) {
+       
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("Kapil");
+        list1.add("Dwayne");
+        list1.add("Karan");
+
+        ArrayList<String> list2 = new ArrayList<>();
+        list2.add("Alice");
+
+       
+        ArrayList<String> joinedList = new ArrayList<>();
+        joinedList.addAll(list1);
+        joinedList.addAll(list2);
+
+        
+        System.out.println("Joined ArrayList: " + joinedList);
+    }
+}

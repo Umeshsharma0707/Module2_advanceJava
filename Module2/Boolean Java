@@ -1,0 +1,12 @@
+public class StartsWithExample {
+    public static void main(String[] args) {
+        String str1 = "Red is favorite color.";
+        String str2 = "Orange is also my favorite color.";
+        
+        boolean result1 = str1.startsWith("Red");
+        boolean result2 = str2.startsWith("Red");
+
+        System.out.println(str1 + " Starts with Red? " + result1);
+        System.out.println(str2 + " Starts with Red? " + result2);
+    }
+}

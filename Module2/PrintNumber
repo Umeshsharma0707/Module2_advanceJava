@@ -1,0 +1,41 @@
+class PrintNumber {
+    
+    void printn(int num) {
+        System.out.println("Printing an integer: " + num);
+    }
+    
+    void printn(double num) {
+        System.out.println("Printing a double: " + num);
+    }
+   
+   void printn(float num) {
+        System.out.println("Printing a float: " + num);
+    }
+    
+   void printn(long num) {
+        System.out.println("Printing a long: " + num);
+    }
+    
+    void printn(short num) {
+        System.out.println("Printing a short: " + num);
+    }
+    
+    void printn(byte num) {
+        System.out.println("Printing a byte: " + num);
+    }
+    
+   void printn(char ch) {
+        System.out.println("Printing a character: " + ch);
+    }
+    
+    public static void main(String[] args) {
+        PrintNumber printer = new PrintNumber();
+        printer.printn(10);
+        printer.printn(3.14);
+        printer.printn(5.0f);
+        printer.printn(1000000000000L);
+        printer.printn((short) 100);
+        printer.printn((byte) 8);
+        printer.printn('A');
+    }
+}

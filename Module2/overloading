@@ -1,0 +1,18 @@
+ class PrintArea {
+    
+    public void printArea(int side) {
+        int area = side * side;
+        System.out.println("Area of square with side " + side + " is " + area);
+    }
+    
+    public void printArea(int length, int breadth) {
+        int area = length * breadth;
+        System.out.println("Area of rectangle with length " + length + " and breadth " + breadth + " is " + area);
+    }
+    
+    public static void main(String[] args) {
+        PrintArea areaPrinter = new PrintArea();
+        areaPrinter.printArea(5);
+        areaPrinter.printArea(10, 15);
+    }
+}

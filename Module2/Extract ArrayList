@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+
+ class P7 {
+    public static void main(String[] args) {
+        
+        
+     ArrayList<String> list =new ArrayList<>();
+	 
+	 list.add("Kapil");
+	 list.add("Dwayne");
+	 list.add("Karan");
+	
+	ArrayList<String> sublist =new ArrayList<>(list.subList(1,3));
+	
+	
+	System.out.println("list=" + sublist);
+	 
+	 
+	 
+	 
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+class P7
+{
+	public static void main(String args[])
+	{
+		ArrayList<String> list = new ArrayList<String>();
+		
+		list.add("Karan");
+		list.add("Dwayne");
+		
+		list.add(0,"Kapil");
+		
+		System.out.println(list);
+	}
+}

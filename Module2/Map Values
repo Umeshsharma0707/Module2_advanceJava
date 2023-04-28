@@ -1,0 +1,19 @@
+import java.util.*;
+
+class P7 {
+    public static void main(String[] args) {
+        
+        Map<String, Integer> map = new HashMap<>();
+
+       
+        map.put("Kapil", 1);
+        map.put("Dwayne", 2);
+        map.put("Karan", 3);
+
+
+        Collection<Integer> values = map.values();
+
+        
+        System.out.println("Values in the map: " + values);
+    }
+}

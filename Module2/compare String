@@ -1,0 +1,13 @@
+public class CompareStrings {
+    public static void main(String[] args) {
+        String str1 = "topsint.com";
+        String str2 = "topsint.com";
+        String str3 = "Topsint.com";
+        
+        boolean result1 = str1.contentEquals(str2);
+        boolean result2 = str2.contentEquals(str3);
+
+        System.out.println("Comparing " + str1 + " and " + str2 + ": " + result1);
+        System.out.println("Comparing " + str2 + " and " + str3 + ": " + result2);
+    }
+}

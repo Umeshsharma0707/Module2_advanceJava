@@ -1,0 +1,81 @@
+import java.util.Scanner;
+
+abstract class Shape {
+    abstract double rectangleArea(double length, double breadth);
+    abstract double squareArea(double side);
+    abstract double circleArea(double radius);
+}
+
+class Area extends Shape {
+    double rectangleArea(double length, double breadth) {
+        return length * breadth; 
+    }
+
+    double squareArea(double side) {
+        return side * side;
+    }
+
+    double circleArea(double radius) {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Area area = new Area();
+
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+        System.out.print("Enter the breadth of the rectangle: ");
+        double breadth = scanner.nextDouble();
+        System.out.println("Area of rectangle: " + area.rectangleArea(length, breadth));
+
+        System.out.print("Enter the side of the square: ");
+        double side = scanner.nextDouble();
+        System.out.println("Area of square: " + area.squareArea(side));
+
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+        System.out.println("Area of circle: " + area.circleArea(radius));
+
+        scanner.close();
+    }
+}
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your marks (out of 100): ");
+        int marks = scanner.nextInt();
+
+        System.out.println("Grade: " + getGrade(marks));
+
+        scanner.close();
+    }
+
+    public static String getGrade(int marks) {
+        if (marks >= 91 && marks <= 100) {
+            return "AA";
+        } else if (marks >= 81 && marks <= 90) {
+            return "AB";
+        } else if (marks >= 71 && marks <= 80) {
+            return "BB";
+        } else if (marks >= 61 && marks <= 70) {
+            return "BC";
+        } else if (marks >= 51 && marks <= 60) {
+            return "CD";
+        } else if (marks >= 41 && marks <= 50) {
+            return "DD";
+        } else {
+            return "Fail";
+        }
+    }
+}
+

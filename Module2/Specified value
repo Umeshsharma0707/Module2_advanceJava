@@ -1,0 +1,20 @@
+import java.util.HashMap;
+
+ class P7 {
+    public static void main(String[] args) {
+        
+        
+     HashMap<String , Integer> map  =new HashMap<>();
+	 
+	 
+	 map.put("Kapil",1);
+	 map.put("Dwayne",2);
+	 map.put("Karan",3);
+	 
+	 map.put("Alice",4);
+	 
+	 System.out.println("HashMap =" + map);
+	 
+	 
+    }
+}

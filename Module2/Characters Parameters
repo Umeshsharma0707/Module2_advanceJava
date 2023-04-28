@@ -1,0 +1,16 @@
+public class PrintIntChar {
+    
+    public void print(int n, char c) {
+        System.out.println("Printing integer " + n + " and character " + c);
+    }
+    
+    public void print(char c, int n) {
+        System.out.println("Printing character " + c + " and integer " + n);
+    }
+    
+    public static void main(String[] args) {
+        PrintIntChar printer = new PrintIntChar();
+        printer.print(10, 'A');
+        printer.print('B', 5);
+    }
+}

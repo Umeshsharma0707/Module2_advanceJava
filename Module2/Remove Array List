@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+
+class  P7
+{
+	public static void main(String args[])
+	{
+	ArrayList<String> list =new ArrayList<>();
+	
+	
+	
+	list.add("Kapil");
+	list.add("Dwayne");
+	list.add("Karan");
+	
+		
+	
+	System.out.println("original ArrayList =" + list);
+	
+   list.remove(2);
+   
+   System.out.println("updated ArrayList =" + list);
+	}
+}	

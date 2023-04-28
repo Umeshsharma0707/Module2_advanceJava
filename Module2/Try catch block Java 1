@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+    int age = 21; // or any other age you want to test
+    try {
+        validate(age);
+    } catch (ArithmeticException e) {
+        System.out.println("Exception caught: " + e.getMessage());
+    }
+}

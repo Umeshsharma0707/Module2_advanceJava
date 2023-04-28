@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+
+ class P7 {
+    public static void main(String[] args) {
+        
+        
+     ArrayList<String> list =new ArrayList<>();
+	 
+	 list.add("Kapil");
+	 list.add("Dwayne");
+	 list.add("Karan");
+	
+	
+	  ArrayList<String> list2 =new ArrayList<>();
+	 
+	 list2.add("Kapil");
+	 list2.add("Dwayne");
+	 list2.add("Karan");
+	 
+	 boolean isEqual  = list.equals(list2);
+	 
+	 if(isEqual)
+	 {
+		 System.out.println("Arrays are Equal");
+	 }
+	
+	
+	else
+	{
+		System.out.println("Arrays are not equal");
+	}
+	
+	 
+	 
+	 
+    }
+}

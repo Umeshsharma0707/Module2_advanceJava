@@ -1,0 +1,17 @@
+import java.util.HashMap;
+
+public class HashMapSize {
+    public static void main(String[] args) {
+        
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("Kapil", 1);
+        map.put("Dwayne", 2);
+        map.put("Karan", 3);
+
+       
+        int size = map.size();
+
+        
+        System.out.println("Number of key-value mappings in the HashMap: " + size);
+    }
+}
